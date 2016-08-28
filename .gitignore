@@ -1,0 +1,7 @@
+*.xcuserstate
+*.xcworkspacedata
+*.xcscheme
+*.lock
+Pods/*
+ScaleUp.xcodeproj/xcuserdata/*
+ScaleUp.xcworkspace
