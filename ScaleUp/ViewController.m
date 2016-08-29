@@ -12,7 +12,6 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) MagnifyView *loop;
-@property (nonatomic, strong) dispatch_source_t timer;
 
 @end
 
@@ -20,13 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, .5 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
-    dispatch_source_set_event_handler(self.timer, ^{
-        
-        [self showLoop];
-    });
 }
 
 - (MagnifyView *)loop
@@ -35,6 +27,7 @@
     {
         _loop = [[MagnifyView alloc] initWithFrame:CGRectMake(0, 0, 120, 120)];
         _loop.viewToMagnify = self.view;
+        [_loop makeKeyAndVisible];
     }
     
     return _loop;
@@ -44,8 +37,6 @@
 {
     self.loop.touchPoint = [[touches anyObject] locationInView:self.view];
     [self.loop setNeedsDisplay];
-    
-    dispatch_resume(self.timer);
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -56,19 +47,17 @@
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    dispatch_suspend(self.timer);
     self.loop = nil;
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    dispatch_suspend(self.timer);
     self.loop = nil;
 }
 
 - (void)showLoop
 {
-    [self.loop makeKeyAndVisible];
+//    [self.loop makeKeyAndVisible];
 }
 
 @end
