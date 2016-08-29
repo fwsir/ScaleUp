@@ -20,11 +20,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="不想起床！！因为…… 只有躺着的时候肚子是平的。" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-6G-Pkd">
                                 <rect key="frame" x="150" y="189" width="300" height="223"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-3h-oAK">
+                                <rect key="frame" x="260" y="480" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fl2-he-hMt"/>
+                                    <constraint firstAttribute="width" constant="80" id="rmJ-iw-O3m"/>
+                                </constraints>
+                                <state key="normal" title="SnapShot"/>
+                                <connections>
+                                    <action selector="snapShot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ys-uR-I6J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EEH-6G-Pkd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6rg-L5-CNz"/>
+                            <constraint firstItem="Ac5-3h-oAK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="BYo-dR-Xp3"/>
                             <constraint firstItem="EEH-6G-Pkd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LC3-dK-8Mg"/>
+                            <constraint firstItem="Ac5-3h-oAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VNH-Pn-mb6"/>
                         </constraints>
                     </view>
                 </viewController>

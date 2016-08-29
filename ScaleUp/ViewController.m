@@ -21,6 +21,21 @@
     [super viewDidLoad];
 }
 
+// 截屏操作
+- (IBAction)snapShot:(id)sender
+{
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UIGraphicsBeginImageContextWithOptions(imageV.frame.size, NO, 0);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    [self.view.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    imageV.image = image;
+    UIGraphicsEndImageContext();
+}
+
 - (MagnifyView *)loop
 {
     if (!_loop)
