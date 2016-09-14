@@ -14,6 +14,10 @@
 		FE71E2F21D72BE5E0021EDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71E2F11D72BE5E0021EDD2 /* Assets.xcassets */; };
 		FE71E2F51D72BE5E0021EDD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71E2F31D72BE5E0021EDD2 /* LaunchScreen.storyboard */; };
 		FE71E3031D72E8B00021EDD2 /* MagnifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71E3021D72E8B00021EDD2 /* MagnifyView.m */; };
+		FE86F22C1D86C914008E52B7 /* ObjcPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FE86F22B1D86C914008E52B7 /* ObjcPerson.m */; };
+		FE86F22F1D86C951008E52B7 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE86F22E1D86C951008E52B7 /* NSObject+Extension.m */; };
+		FE86F2321D88E92E008E52B7 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE86F2311D88E92E008E52B7 /* DrawView.m */; };
+		FEB49DAA1D77BBE60083D718 /* BlockTmp.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB49DA91D77BBE60083D718 /* BlockTmp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		FE71E2F61D72BE5E0021EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE71E3011D72E8B00021EDD2 /* MagnifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifyView.h; sourceTree = "<group>"; };
 		FE71E3021D72E8B00021EDD2 /* MagnifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifyView.m; sourceTree = "<group>"; };
+		FE86F22A1D86C914008E52B7 /* ObjcPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcPerson.h; sourceTree = "<group>"; };
+		FE86F22B1D86C914008E52B7 /* ObjcPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcPerson.m; sourceTree = "<group>"; };
+		FE86F22D1D86C951008E52B7 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		FE86F22E1D86C951008E52B7 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		FE86F2301D88E92E008E52B7 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		FE86F2311D88E92E008E52B7 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		FEB49DA81D77BBE60083D718 /* BlockTmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTmp.h; sourceTree = "<group>"; };
+		FEB49DA91D77BBE60083D718 /* BlockTmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTmp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,14 @@
 				FE71E2EE1D72BE5E0021EDD2 /* Main.storyboard */,
 				FE71E3011D72E8B00021EDD2 /* MagnifyView.h */,
 				FE71E3021D72E8B00021EDD2 /* MagnifyView.m */,
+				FE86F2301D88E92E008E52B7 /* DrawView.h */,
+				FE86F2311D88E92E008E52B7 /* DrawView.m */,
+				FEB49DA81D77BBE60083D718 /* BlockTmp.h */,
+				FEB49DA91D77BBE60083D718 /* BlockTmp.m */,
+				FE86F22A1D86C914008E52B7 /* ObjcPerson.h */,
+				FE86F22B1D86C914008E52B7 /* ObjcPerson.m */,
+				FE86F22D1D86C951008E52B7 /* NSObject+Extension.h */,
+				FE86F22E1D86C951008E52B7 /* NSObject+Extension.m */,
 				FE71E2F11D72BE5E0021EDD2 /* Assets.xcassets */,
 				FE71E2F31D72BE5E0021EDD2 /* LaunchScreen.storyboard */,
 				FE71E2F61D72BE5E0021EDD2 /* Info.plist */,
@@ -155,9 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86F22C1D86C914008E52B7 /* ObjcPerson.m in Sources */,
 				FE71E2ED1D72BE5D0021EDD2 /* ViewController.m in Sources */,
 				FE71E2EA1D72BE5D0021EDD2 /* AppDelegate.m in Sources */,
+				FEB49DAA1D77BBE60083D718 /* BlockTmp.m in Sources */,
 				FE71E3031D72E8B00021EDD2 /* MagnifyView.m in Sources */,
+				FE86F22F1D86C951008E52B7 /* NSObject+Extension.m in Sources */,
+				FE86F2321D88E92E008E52B7 /* DrawView.m in Sources */,
 				FE71E2E71D72BE5D0021EDD2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +333,7 @@
 				FE71E2FB1D72BE5E0021EDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
